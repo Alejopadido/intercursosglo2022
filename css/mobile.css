@@ -12,6 +12,7 @@ html {
 /* Variables */
 :root {
     --main-bg-color: #2C2C2C;
+    --text-font: 'Roboto Slab', serif;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 3rem;
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--text-font);
     display: block;
   }
   
@@ -65,5 +66,24 @@ body {
     background-color: #DDAC32;
     color: black;
   } */
-  
+
+
+  /* Images styling */
+  #home_dioses {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+  }
+  .dioses_container {
+      margin-bottom: 4rem;
+      text-align: center;
+  }
+  .dioses_container h1 {
+      font-family: var(--text-font);
+      font-size: 5rem;
+      color: white;
+  }
+  .dioses_img {
+      width: 30rem;
+  }
   
