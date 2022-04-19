@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+/* Variables */
+:root {
+    --main-bg-color: #2C2C2C;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: var(--main-bg-color);
+    box-shadow: 5px 1px 18px #201f1f;
+    position: relative;
+    /* height: 7rem; */
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    background-color: #DDAC32;
+  }
+  .topnav #myLinks a {
+      font-size: 2.5rem;
+      color: var(--main-bg-color);
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Roboto Slab', serif;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: var(--main-bg-color);
+    color: #DDAC32;
+    display: block;
+    position: absolute;
+    font-size: 3.8rem;
+    margin-right: 1rem;
+    right: 0;
+    top: -0.7rem;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  /* .topnav a:hover {
+    background-color: #DDAC32;
+    color: black;
+  } */
+  
+  
