@@ -1,89 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+@import "compass/css3";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* Variables */
 :root {
-    --main-bg-color: #2C2C2C;
-    --text-font: 'Roboto Slab', serif;
+  --main-bg-color: #2c2c2c;
+  --text-font: "Roboto Slab", serif;
 }
 
 body {
-    background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 }
-
 
 /* Style the navigation menu */
 .topnav {
-    overflow: hidden;
-    background-color: var(--main-bg-color);
-    box-shadow: 5px 1px 18px #201f1f;
-    position: relative;
-    /* height: 7rem; */
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-    background-color: #DDAC32;
-  }
-  .topnav #myLinks a {
-      font-size: 2.5rem;
-      color: var(--main-bg-color);
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 3rem;
-    font-family: var(--text-font);
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: var(--main-bg-color);
-    color: #DDAC32;
-    display: block;
-    position: absolute;
-    font-size: 3.8rem;
-    margin-right: 1rem;
-    right: 0;
-    top: -0.7rem;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  /* .topnav a:hover {
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+  box-shadow: 5px 1px 18px #201f1f;
+  position: relative;
+  /* height: 7rem; */
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  background-color: #ddac32;
+}
+.topnav #myLinks a {
+  font-size: 2.5rem;
+  color: var(--main-bg-color);
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: var(--text-font);
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: var(--main-bg-color);
+  color: #ddac32;
+  display: block;
+  position: absolute;
+  font-size: 3.8rem;
+  margin-right: 1rem;
+  right: 0;
+  top: -0.7rem;
+}
+
+/* Add a grey background color on mouse-over */
+/* .topnav a:hover {
     background-color: #DDAC32;
     color: black;
   } */
 
+/* Images styling */
+#home_dioses {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.dioses_container {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.dioses_container h1 {
+  font-family: var(--text-font);
+  font-size: 5rem;
+  color: white;
+}
+.dioses_img {
+  width: 30rem;
+}
 
-  /* Images styling */
-  #home_dioses {
-      margin-top: 4rem;
-      display: flex;
-      flex-direction: column;
-  }
-  .dioses_container {
-      margin-bottom: 4rem;
-      text-align: center;
-  }
-  .dioses_container h1 {
-      font-family: var(--text-font);
-      font-size: 5rem;
-      color: white;
-  }
-  .dioses_img {
-      width: 30rem;
-  }
-  
+/* Individual pages */
+.dioses_img_individuales {
+  width: 20rem;
+}
+.dioses_descripcion {
+  text-align: center;
+  margin: 1rem 4rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+h6 a {
+  text-decoration: underline;
+  color: white;
+}
+
+/* color container */
+.secondary_container {
+  display: flex;
+  /* background-color: white; */
+  margin-left: 2rem;
+  font-size: 2rem;
+  align-items: center;
+  color: white;
+}
+.primary_container {
+  margin-left: 2rem;
+  font-size: 2rem;
+  align-items: center;
+  color: white;
+}
+.terciary_container {
+    margin-top: 1rem;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.color {
+  margin-left: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid white 0.1rem;
+}
+
+/* Colors */
+#green {
+  background-color: green;
+}
+#pink {
+    background-color: palevioletred;
+}
+#yellow {
+    background-color: #ddac32;
+}
+#purple {
+    background-color: purple;
+}
+#light_blue {
+    background-color: lightblue;
+}
+#white {
+    background-color: white;
+}
+#red {
+    background-color: red;
+}
+#dark_blue {
+    background-color: darkblue;
+}
+#orange {
+    background-color: orange;
+}
+#black {
+    background-color: black;
+}
+
+/* Table */
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 340px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: #ddac32;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: thin solid #dddddd;
+}
+
+/* .styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+} */
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ddac32;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+
+
+
+/* Footer */
+footer {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    position: static;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.507);
+}
+.fa-brands {
+    color: #ddac32;
+    font-size: 2.5rem;
+}
