@@ -1,52 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intercursos GLO</title>
-    <link rel="shortcut icon" href="https://gimnasiolosocobos.edu.co/wp-content/uploads/2021/01/LOGO-VERTICAR-GRANDE_Mesa-de-trabajo-1-1024x992.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://gimnasiolosocobos.edu.co/wp-content/uploads/2021/01/LOGO-VERTICAR-GRANDE_Mesa-de-trabajo-1-1024x992.png"
+      type="image/x-icon"
+    />
 
     <!-- CSS files -->
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/mobile.css" />
 
     <!-- font awesome ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-    <script src="https://kit.fontawesome.com/ff79692751.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/ff79692751.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div class="topnav">
-            <a href="#home">INTERCURSOS GLO</a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-              <a href="./index.html">Inicio</a>
-              <a href="./calendar.html">Calendario</a>
-              <a href="./personera.html">Personera</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
+      <div class="topnav">
+        <a href="./index.html">INTERCURSOS GLO</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="./index.html">Inicio</a>
+          <a href="./calendar.html">Calendario</a>
+          <a href="./personera.html">Personera</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </header>
     <main>
-        <h1>Calendario</h1>
-        
+      <div class="primary_container">
+        <h2>Fútbol</h2>
+        <br />
+        <!-- TABLA -->
+        <div class="secondary_container">
+          <table id="calendar">
+            <caption>
+              Semana 2-6 de Mayo
+            </caption>
+
+            <!-- <tr class="days">
+              <td class="day other-month">
+                <div class="date">27</div>
+              </td>
+              <td class="day other-month">
+                <div class="date">28</div>
+                <div class="event">
+                  <div class="event-desc">
+                    HTML 5 lecture with Brad Traversy from Eduonix
+                  </div>
+                  <div class="event-time">
+                    1:00pm to 3:00pm
+                  </div>
+                </div>
+              </td>
+              <td class="day other-month">
+                <div class="date">29</div>
+              </td>
+              <td class="day other-month">
+                <div class="date">30</div>
+              </td>
+              <td class="day other-month">
+                <div class="date">31</div>
+              </td> -->
+
+            <tr>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Lunes</h4>
+                  <div class="date">2</div>
+                </div>
+                
+                <div class="event">
+                  <div class="event-desc">
+                    Segundo vs Tercero & Cuarto vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Sexto vs Octavo & Décimo vs Once
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Martes</h4>
+                  <div class="date">3</div>
+                </div>
+
+                <div class="event">
+                  <div class="event-desc">
+                    Segundo vs Cuarto & Tercero vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Octavo vs Decimo & Once vs Sexto
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Miercoles</h4>
+                  <div class="date">4</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Tercero vs Cuarto & Segundo vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Jueves</h4>
+                  <div class="date">5</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Final
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Final Bachillerato
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Viernes</h4>
+                  <div class="date">6</div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+          </table>
+        </div>
+      </div>
+      <div class="primary_container">
+        <h2>Baloncesto</h2>
+        <br />
+        <!-- TABLA -->
+        <div class="secondary_container">
+          <table id="calendar">
+            <caption>
+              Semana 9-13 de Mayo
+            </caption>
+            <tr>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Lunes</h4>
+                  <div class="date">9</div>
+                </div>
+                
+                <div class="event">
+                  <div class="event-desc">
+                    Tercero vs Cuarto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Martes</h4>
+                  <div class="date">10</div>
+                </div>
+
+                <div class="event">
+                  <div class="event-desc">
+                    Cuarto vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+              </td>
+
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Miercoles</h4>
+                  <div class="date">11</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Tercero vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Jueves</h4>
+                  <div class="date">12</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Final
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Viernes</h4>
+                  <div class="date">13</div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+          </table>
+          <!-- TABLA -->
+        <div class="secondary_container">
+          <table id="calendar">
+            <caption>
+              Semana 2-6 de Mayo
+            </caption>
+            <tr>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Lunes</h4>
+                  <div class="date">2</div>
+                </div>
+                
+                <div class="event">
+                  <div class="event-desc">
+                    Segundo vs Tercero & Cuarto vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Sexto vs Octavo & Décimo vs Once
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Martes</h4>
+                  <div class="date">3</div>
+                </div>
+
+                <div class="event">
+                  <div class="event-desc">
+                    Segundo vs Cuarto & Tercero vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Octavo vs Decimo & Once vs Sexto
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Miercoles</h4>
+                  <div class="date">4</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Tercero vs Cuarto & Segundo vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Jueves</h4>
+                  <div class="date">5</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Final
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Final Bachillerato
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Viernes</h4>
+                  <div class="date">6</div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+          </table>
+          <!-- TABLA -->
+        <div class="secondary_container">
+          <table id="calendar">
+            <caption>
+              Semana 2-6 de Mayo
+            </caption>
+            <tr>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Lunes</h4>
+                  <div class="date">2</div>
+                </div>
+                
+                <div class="event">
+                  <div class="event-desc">
+                    Segundo vs Tercero & Cuarto vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Sexto vs Octavo & Décimo vs Once
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Martes</h4>
+                  <div class="date">3</div>
+                </div>
+
+                <div class="event">
+                  <div class="event-desc">
+                    Segundo vs Cuarto & Tercero vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Octavo vs Decimo & Once vs Sexto
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Miercoles</h4>
+                  <div class="date">4</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Tercero vs Cuarto & Segundo vs Quinto
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Jueves</h4>
+                  <div class="date">5</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Final
+                  </div>
+
+                  <div class="event-time">11:30pm</div>
+                </div>
+                <div class="event">
+                  <div class="event-desc">
+                    Final Bachillerato
+                  </div>
+
+                  <div class="event-time">12:30pm</div>
+                </div>
+              </td>
+              <td class="day">
+                <div class="day_and_date">
+                  <h4>Viernes</h4>
+                  <div class="date">6</div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+          </table>
+        </div>
+      </div>
     </main>
     <footer>
       <h1>Desarrollado por Alejandro Parrado Di Doménico</h1>
       <div class="terciary_container">
-
-        <a href="https://instagram.com/alejopadido?r=nametag" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://twitter.com/alejopadido/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://wa.me/573186064342" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://github.com/Alejopadido" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/alejopadido?r=nametag" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/alejopadido/" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://github.com/Alejopadido" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </div>
     </footer>
 
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
